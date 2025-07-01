@@ -30,7 +30,7 @@ jobs:
                 output_file_path: checkov-results.sarif
             
             - name: Upload SARIF to GitHub Code Scanning
-              uses: github/codeql-action/upload-sarif@v2
+              uses: github/codeql-action/upload-sarif@v3
               with:
                 sarif_file: checkov-results.sarif
 # comment
